@@ -1,13 +1,24 @@
 local opts = {noremap = true}
 vim.g.mapleader = ' '
-vim.g.maplocalleader = ' '
+local set = vim.keymap.set
+
 -- Delete word with CTRL+Backspace
-vim.keymap.set("i", "<C-H>", "<C-W>")
+set("i", "<C-H>", "<C-W>")
 -- Exit terminal mode with Esc
-vim.keymap.set("t", "<Esc>", "<C-\\><C-n>")
+set("t", "<Esc>", "<C-\\><C-n>")
 -- Open Netrw
-vim.keymap.set('n', '<leader>f', ':Ex<CR>')
+set('n', '<leader>f', ':Ex<CR>')
 -- Save & load folds
-vim.keymap.set('n', '<leader>sf', ':mkview')
-vim.keymap.set('n', '<leader>lf', ':loadview')
+set('n', '<leader>sf', ':mkview')
+set('n', '<leader>lf', ':loadview')
+
+-- Open powershell vertically
+set('n', '<leader>ps', '<cmd>vs term://pwsh<CR>')
+-- Exit powershell
+set('t', 'qq', '<cmd>quit<CR>')
+
+
+
+
+
 
