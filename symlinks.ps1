@@ -3,9 +3,9 @@
   Description: Script for creating symlinks to dotfiles
 #>
 
-# ________________________________
-# [[Paths for Symlinks & Targets]]
-# ________________________________
+# ------------------------
+# [[ Args for New-Item ]]
+# ------------------------
 $NvimPath = "$Env:LOCALAPPDATA\nvim\"
 $NvimTarget = "$Env:HOMEPATH\dotfiles\nvim\"
 
@@ -14,6 +14,9 @@ $PSProfileTarget = "$Env:HOMEPATH\dotfiles\Microsoft.PowerShell_profile.ps1"
 $PSProfileName = "Microsoft.PowerShell_profile.ps1"
 
 
+# ----------------------
+# [[ Create Symlinks ]]
+# ----------------------
 # Nvim config
 New-Item -ItemType SymbolicLink -Path $NvimPath -Target $NvimTarget
 # PowerShell profile
