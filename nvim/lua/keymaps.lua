@@ -1,4 +1,3 @@
-local opts = {noremap = true}
 vim.g.mapleader = ' '
 local set = vim.keymap.set
 
