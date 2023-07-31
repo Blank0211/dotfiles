@@ -13,12 +13,13 @@ $PSProfilePath = "$Env:HOMEPATH\Documents\PowerShell\"
 $PSProfileTarget = "$Env:HOMEPATH\dotfiles\Microsoft.PowerShell_profile.ps1"
 $PSProfileName = "Microsoft.PowerShell_profile.ps1"
 
+$WeztermPath = "$Env:HOMEPATH\.config\wezterm\"
+$WeztermTarget = "$Env:HOMEPATH\dotfiles\wezterm\"
 
 # ----------------------
 # [[ Create Symlinks ]]
 # ----------------------
-# Nvim config
 New-Item -ItemType SymbolicLink -Path $NvimPath -Target $NvimTarget
-# PowerShell profile
 New-Item -ItemType SymbolicLink -Path $PSProfilePath -Name $PSProfileName -Target $PSProfileTarget
+New-Item -ItemType SymbolicLink -Path $WeztermPath -Target $WeztermTarget
 
