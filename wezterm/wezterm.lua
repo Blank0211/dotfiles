@@ -12,7 +12,7 @@ end
 
 -- This is where you actually apply your config choices
 config.color_scheme = 'tokyonight_night'
-config.default_prog = {'pwsh.exe'}
+config.default_prog = {'pwsh.exe', '-nologo'}
 
 -- and finally, return the configuration to wezterm
 return config
