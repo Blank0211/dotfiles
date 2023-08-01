@@ -16,7 +16,7 @@ set("t", "<Esc>", "<C-\\><C-n>",
   {desc = 'Exit Terminal mode with ESC'})
 
 -- Misc
-set("i", "<C-H>", "<C-W>",
+set("i", "<C-H>", "<C-W>", -- NOTE: <C-BS> does not work on windows.
   {desc = 'Delete word with CTRL+BS'})
 set('n', '<leader>f', ':Ex<CR>',
   {desc = 'Open file explorer (Netrw)'})
