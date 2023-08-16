@@ -12,5 +12,16 @@ scoop bucket add sysinternals
 scoop install aria2
 
 # Utils
-scoop install sumatrapdf mpc-be mpv xnview everything
+scoop install sumatrapdf mpc-be mpv xnview
+scoop install 7zip everything autoruns
+scoop install marktext ghostwriter losslesscut
+
+# Dev Tools
+scoop install wezterm neovim git
+
+# Networking
+scoop install firefox qbittorrent telegram
+scoop install bitwarden simplewall
+
+Write-Host "scoop_apps.ps1: Script finished." -ForegroundColor Green
 
