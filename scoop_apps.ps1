@@ -1,6 +1,8 @@
 <#
   Name: scoop_apps.ps1
-  Description: Powershell script to install programs using scoop
+  Description: Powershell script to install programs using scoop.
+      Step 1: Intall scoop 
+      Step 2: Run script from powershell
 #>
 
 # Necessary buckets
