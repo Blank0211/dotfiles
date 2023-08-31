@@ -2,9 +2,9 @@ vim.g.mapleader = ' '
 local set = vim.keymap.set
 
 -- Folds
-set('n', '<leader>fs', ':mkview<CR>',
+set('n', '<leader>sf', ':mkview<CR>',
   {desc='Save current folds', silent=true})
-set('n', '<leader>fl', ':loadview<CR>',
+set('n', '<leader>lf', ':loadview<CR>',
   {desc = 'Load saved folds', silent=true})
 
 -- Powershell
