@@ -4,9 +4,13 @@
 require('paq') {
   'savq/paq-nvim', -- Let Paq manage itself
 
-  'm4xshen/autoclose.nvim', -- Autoclose
-  'folke/tokyonight.nvim', -- Colorscheme
-  'echasnovski/mini.clue' -- Mini.Clue
+  'm4xshen/autoclose.nvim',
+  'folke/tokyonight.nvim',
+  'echasnovski/mini.clue',
+  'echasnovski/mini.files',
+
+  -- Dependencies
+  'nvim-tree/nvim-web-devicons', -- For: Mini.Files
 }
 
 -- ===================
@@ -81,3 +85,6 @@ miniclue.setup({
   },
 })
  
+-- [ Mini.Files ]
+require('mini.files').setup()
+
