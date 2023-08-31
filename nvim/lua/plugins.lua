@@ -29,6 +29,8 @@ vim.cmd[[colorscheme tokyonight]]
 -- [ Mini.Clue ]
 local miniclue = require('mini.clue')
 miniclue.setup({
+  -- Array of opt-in triggers which start custom key query process.
+  -- **Needs to have something in order to show clues**.
   triggers = {
     -- Leader triggers
     {mode = 'n', keys = '<Leader>'},
@@ -61,6 +63,7 @@ miniclue.setup({
     {mode = 'x', keys = 'z'},
   },
 
+  -- Array of extra clues to show.
   clues = {
     -- Enhance this by adding descriptions for <Leader> mapping groups
     miniclue.gen_clues.builtin_completion(),
@@ -69,6 +72,12 @@ miniclue.setup({
     miniclue.gen_clues.registers(),
     miniclue.gen_clues.windows(),
     miniclue.gen_clues.z(),
+  },
+
+  -- Clue window settings
+  window = {
+    -- Delay before showing clue window
+    delay = 20,
   },
 })
  
