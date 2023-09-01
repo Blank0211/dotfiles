@@ -19,7 +19,7 @@ $WeztermTarget = "$Env:HOMEPATH\dotfiles\wezterm\"
 # ----------------------
 # [[ Create Symlinks ]]
 # ----------------------
-New-Item -ItemType SymbolicLink -Path $NvimPath -Target $NvimTarget
-New-Item -ItemType SymbolicLink -Path $PSProfilePath -Name $PSProfileName -Target $PSProfileTarget
-New-Item -ItemType SymbolicLink -Path $WeztermPath -Target $WeztermTarget
+New-Item -ItemType SymbolicLink -Path $NvimPath -Target $NvimTarget -Force
+New-Item -ItemType SymbolicLink -Path $PSProfilePath -Name $PSProfileName -Target $PSProfileTarget -Force
+New-Item -ItemType SymbolicLink -Path $WeztermPath -Target $WeztermTarget -Force
 
