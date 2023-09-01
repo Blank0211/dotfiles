@@ -12,6 +12,7 @@ scoop bucket add sysinternals
 
 # Scoop can utilize aria2 for multi-connection downloads
 scoop install aria2
+scoop install scoop-completion
 
 # Utils
 scoop install sumatrapdf mpc-be mpv xnview
