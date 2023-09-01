@@ -18,7 +18,7 @@ set('t', '<Esc>', '<C-\\><C-n>',
 -- Misc
 set('i', '<C-H>', '<C-W>', -- NOTE: <C-BS> does not work on windows.
   {desc = 'Delete word with CTRL+BS'})
-set('i', '<leader>ff', MiniFiles.open,
+set('n', '<leader>ff', MiniFiles.open,
   {desc = 'Open MiniFiles Explorer'})
 
 
