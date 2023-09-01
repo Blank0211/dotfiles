@@ -16,7 +16,8 @@ scoop install aria2
 # Utils
 scoop install sumatrapdf mpc-be mpv xnview
 scoop install 7zip everything autoruns
-scoop install marktext ghostwriter losslesscut
+scoop install marktext ghostwriter notepadplusplus
+scoop install losslesscut avidemux 
 
 # Dev Tools
 scoop install wezterm neovim git
