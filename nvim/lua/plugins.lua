@@ -1,6 +1,6 @@
--- =========================
+-- ==========================
 -- [[ PLUGIN INSTALLATIONS ]]
--- =========================
+-- ==========================
 require('paq') {
   'savq/paq-nvim', -- Let Paq manage itself
 
@@ -16,7 +16,6 @@ require('paq') {
 -- ===================
 -- [[ PLUGIN SETUPS ]]
 -- ===================
-
 -- [ Autoclose ]
 require('autoclose').setup {
   keys = {
