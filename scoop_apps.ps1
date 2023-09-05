@@ -12,6 +12,7 @@ scoop bucket add sysinternals
 
 # Scoop can utilize aria2 for multi-connection downloads
 scoop install aria2
+# TAB completion for scoop commands in powershell
 scoop install scoop-completion
 
 # Utils
