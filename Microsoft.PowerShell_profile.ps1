@@ -3,8 +3,12 @@ $myvar = "myvar haha"
 Import-Module scoop-completion
 
 
-function ccp([string]$compiler = "clang") {
-    $cmd = "$compiler waterfall.c -o a.exe -std=c18 -Wall -Wextra -pedantic -Wformat=2"
+function ccp {
+    param ([string]$Compiler = "clang",
+           [string]$InputFile = "waterfall.c",
+           [string]$OutputFile = "a.exe")
+
+    $cmd = "$Compiler $InputFile -o $OutputFile -std=c18 -Wall -Wextra -pedantic -Wformat=2"
     Invoke-Expression $cmd
 }
 
