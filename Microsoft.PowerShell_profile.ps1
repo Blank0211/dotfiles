@@ -8,7 +8,12 @@ function ccp {
            [string]$InputFile = "waterfall.c",
            [string]$OutputFile = "a.exe")
 
-    $cmd = "$Compiler $InputFile -o $OutputFile -std=c18 -Wall -Wextra -pedantic -Wformat=2"
+    if (($Compiler -cne "clang") -and ($Compiler -cne "gcc")) {
+        Write-Output "Invalid value for -compiler param: $Compiler"
+        return
+    }
+    $flags = "-std=c18 -Wall -Wextra -pedantic -Wformat=2"
+    $cmd = "$Compiler $InputFile -o $OutputFile $flags"
     Invoke-Expression $cmd
 }
 
