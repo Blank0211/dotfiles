@@ -16,7 +16,6 @@ function ccp {
     }
 
     $flags = "-std=c18 -Wall -Wextra -pedantic -Wformat=2"
-    $cmd = "$Compiler $InputFile -o $OutputFile $flags"
-    Invoke-Expression $cmd
+    Invoke-Expression "$Compiler $InputFile -o $OutputFile $flags"
 }
 
