@@ -1,4 +1,5 @@
-$PSStyle.FileInfo.Directory = ""
+# Remove highlight or visual style from directories
+$PSStyle.FileInfo.Directory = "" 
 $myvar = "myvar haha"
 Import-Module scoop-completion
 
