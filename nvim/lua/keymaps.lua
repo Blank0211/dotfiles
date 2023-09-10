@@ -3,9 +3,9 @@ local set = vim.keymap.set
 
 -- Folds
 set('n', '<leader>sf', ':mkview<CR>',
-  {desc = 'Save current folds', silent=true})
+  {desc = 'Save current folds'})
 set('n', '<leader>lf', ':loadview<CR>',
-  {desc = 'Load saved folds', silent=true})
+  {desc = 'Load saved folds'})
 
 -- Misc
 set('i', '<C-H>', '<C-W>', -- NOTE: <C-BS> does not work on windows.
