@@ -17,7 +17,7 @@ scoop install scoop-completion
 
 # Utils
 scoop install sumatrapdf mpc-be mpv xnview
-scoop install 7zip everything autoruns
+scoop install 7zip everything autoruns bulk-crap-uninstaller
 scoop install marktext ghostwriter notepadplusplus
 scoop install losslesscut avidemux 
 
