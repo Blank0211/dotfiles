@@ -13,11 +13,14 @@ scoop install aria2
 # TAB completion for scoop commands in powershell
 scoop install scoop-completion
 
-# Utils
+# Media
 scoop install sumatrapdf mpc-be mpv xnview
-scoop install 7zip everything autoruns bulk-crap-uninstaller
-scoop install marktext ghostwriter notepadplusplus
 scoop install losslesscut avidemux 
+
+# Utils
+scoop install 7zip everything autoruns
+scoop install marktext ghostwriter notepadplusplus
+scoop install bulk-crap-uninstaller
 
 # Dev Tools
 scoop install wezterm neovim git
