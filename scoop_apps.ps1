@@ -1,8 +1,6 @@
 <#
   Name: scoop_apps.ps1
   Description: Powershell script to install programs using scoop.
-      Step 1: Intall scoop 
-      Step 2: Run script from powershell
 #>
 
 # Necessary buckets
@@ -26,7 +24,7 @@ scoop install wezterm neovim git
 
 # Networking
 scoop install firefox qbittorrent telegram
-scoop install bitwarden simplewall
+scoop install simplewall
 
 Write-Host "scoop_apps.ps1: Script finished." -ForegroundColor Green
 
