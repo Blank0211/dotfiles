@@ -11,6 +11,7 @@ if wezterm.config_builder then
 end
 
 -- This is where you actually apply your config choices
+wezterm.font("JetBrainsMono NFM", {weight="Regular", stretch="Normal", style="Normal"})
 config.color_scheme = 'tokyonight_night'
 config.default_prog = {'pwsh.exe', '-nologo'}
 
