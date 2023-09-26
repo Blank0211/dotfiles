@@ -16,7 +16,7 @@ o.shiftwidth = 2
 o.softtabstop = 2
 
 -- Behaviour
-o.scrolljump = 10
+o.scrolljump = 20
 o.ignorecase = true
 o.splitright = true
 
