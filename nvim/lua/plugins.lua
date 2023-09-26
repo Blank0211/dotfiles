@@ -86,5 +86,4 @@ miniclue.setup({
  
 -- [ Mini.Files ]
 require('mini.files').setup()
-require('nvim-web-devicons').setup()
 
