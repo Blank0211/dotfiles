@@ -2,9 +2,9 @@ vim.g.mapleader = ' '
 local set = vim.keymap.set
 
 -- Folds
-set('n', '<leader>sf', ':mkview<CR>',
+set('n', '<leader>fs', ':mkview<CR>',
   {desc = 'Save current folds'})
-set('n', '<leader>lf', ':loadview<CR>',
+set('n', '<leader>fl', ':loadview<CR>',
   {desc = 'Load saved folds'})
 
 -- Misc
