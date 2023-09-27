@@ -81,6 +81,10 @@ miniclue.setup({
   window = {
     -- Delay before showing clue window
     delay = 20,
+    
+    config = {
+      width = 40, -- Window width
+    }
   },
 })
  
