@@ -1,8 +1,7 @@
 # Remove highlight or visual style from directories
 $PSStyle.FileInfo.Directory = "" 
-$myvar = "myvar haha"
 Import-Module scoop-completion
-
+Set-Alias -Name vim -Value nvim
 
 # compile c files.
 function ccp {
