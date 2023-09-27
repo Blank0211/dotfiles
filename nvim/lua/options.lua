@@ -19,4 +19,5 @@ o.softtabstop = 2
 o.scrolljump = 20
 o.ignorecase = true
 o.splitright = true
+o.history = 100 -- cmdline hitory
 
