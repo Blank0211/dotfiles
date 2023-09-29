@@ -3,23 +3,19 @@
   Description: Script for creating symlinks to dotfiles
 #>
 
-# ------------------------
-# [[ Args for New-Item ]]
-# ------------------------
-$NvimPath = "$Env:LOCALAPPDATA\nvim\"
-$NvimTarget = "$Env:HOMEPATH\dotfiles\nvim\"
+# Neovim config
+$Path = "$Env:LOCALAPPDATA\nvim\"
+$Target = "$Env:HOMEPATH\dotfiles\nvim\"
+New-Item -ItemType SymbolicLink -Path $Path -Target $Target -Force
 
-$PSProfilePath = "$Env:HOMEPATH\Documents\PowerShell\"
-$PSProfileTarget = "$Env:HOMEPATH\dotfiles\Microsoft.PowerShell_profile.ps1"
-$PSProfileName = "Microsoft.PowerShell_profile.ps1"
+# Powershell profile
+$Path = "$Env:HOMEPATH\Documents\PowerShell\"
+$Name = "Microsoft.PowerShell_profile.ps1"
+$Target = "$Env:HOMEPATH\dotfiles\Microsoft.PowerShell_profile.ps1"
+New-Item -ItemType SymbolicLink -Path $Path -Name $Name -Target $Target -Force
 
-$WeztermPath = "$Env:HOMEPATH\.config\wezterm\"
-$WeztermTarget = "$Env:HOMEPATH\dotfiles\wezterm\"
-
-# ----------------------
-# [[ Create Symlinks ]]
-# ----------------------
-New-Item -ItemType SymbolicLink -Path $NvimPath -Target $NvimTarget -Force
-New-Item -ItemType SymbolicLink -Path $PSProfilePath -Name $PSProfileName -Target $PSProfileTarget -Force
-New-Item -ItemType SymbolicLink -Path $WeztermPath -Target $WeztermTarget -Force
+# Wezterm config
+$Path = "$Env:HOMEPATH\.config\wezterm\"
+$Target = "$Env:HOMEPATH\dotfiles\wezterm\"
+New-Item -ItemType SymbolicLink -Path $Path -Target $Target -Force
 
