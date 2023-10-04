@@ -16,13 +16,6 @@ require('paq') {
 -- ===================
 -- [[ PLUGIN SETUPS ]]
 -- ===================
--- [ Autoclose ]
-
--- [ Colorscheme ]
-require('tokyonight').setup {
-    style = 'night',
-}
-vim.cmd[[colorscheme tokyonight]]
 
 -- [ Mini.Clue ]
 local miniclue = require('mini.clue')

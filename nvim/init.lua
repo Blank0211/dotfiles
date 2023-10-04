@@ -4,6 +4,7 @@ local modules = {
 
     "plugins",
     "plugins.autoclose",
+    "plugins.tokyonight",
 }
 
 for _, module in ipairs(modules) do
