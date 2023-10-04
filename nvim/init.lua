@@ -5,6 +5,7 @@ local modules = {
     "plugins",
     "plugins.autoclose",
     "plugins.tokyonight",
+    "plugins.minifiles",
     "plugins.miniclue",
 }
 

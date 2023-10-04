@@ -1,6 +1,4 @@
--- ==========================
--- [[ PLUGIN INSTALLATIONS ]]
--- ==========================
+-- PLUGIN INSTALLATIONS
 require('paq') {
     'savq/paq-nvim', -- Let Paq manage itself
 
@@ -10,13 +8,6 @@ require('paq') {
     'echasnovski/mini.files',
 
     -- Dependencies
-    'nvim-tree/nvim-web-devicons', -- For: Mini.Files
+    'nvim-tree/nvim-web-devicons', -- For: MiniFiles
 }
-
--- ===================
--- [[ PLUGIN SETUPS ]]
--- ===================
-
--- [ Mini.Files ]
-require('mini.files').setup()
 

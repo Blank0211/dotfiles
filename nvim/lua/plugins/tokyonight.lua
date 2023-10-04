@@ -1,4 +1,3 @@
--- [ Colorscheme ]
 require('tokyonight').setup {
     style = 'night',
 }
