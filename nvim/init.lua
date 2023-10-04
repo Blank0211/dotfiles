@@ -1,7 +1,9 @@
 local modules = {
     "options",
     "keymaps",
+
     "plugins",
+    "plugins.autoclose",
 }
 
 for _, module in ipairs(modules) do

@@ -17,11 +17,6 @@ require('paq') {
 -- [[ PLUGIN SETUPS ]]
 -- ===================
 -- [ Autoclose ]
-require('autoclose').setup {
-    options = {
-        disable_when_touch = true,
-    }
-}
 
 -- [ Colorscheme ]
 require('tokyonight').setup {
