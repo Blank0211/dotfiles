@@ -1,7 +1,7 @@
 # Remove highlight or visual style from directories
 $PSStyle.FileInfo.Directory = "" 
-Import-Module scoop-completion
-Set-Alias -Name vim -Value nvim
+Import-Module scoop-completion # scoop <tab> expansion in powershell
+Set-Alias -Name vim -Value nvim # vim = nvim
 
 # compile c files.
 function ccp {
