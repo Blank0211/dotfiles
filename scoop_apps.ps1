@@ -15,7 +15,7 @@ scoop install scoop-completion
 
 # Media
 scoop install sumatrapdf mpc-be mpv xnview
-scoop install losslesscut avidemux 
+scoop install losslesscut
 
 # Utils
 scoop install 7zip everything autoruns
