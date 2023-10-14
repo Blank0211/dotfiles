@@ -12,6 +12,4 @@ iwr https://raw.githubusercontent.com/Blank0211/dotfiles/master/scoop_apps.ps1 |
 ```
 
 # TODO
--   Neovim:
-    1.  Add autocommand to execute :loadview on bufenter.
 
