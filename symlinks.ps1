@@ -10,7 +10,7 @@ New-Item -ItemType SymbolicLink -Path $Path -Target $Target -Force
 
 # Powershell profile
 $Path = "$Env:HOMEPATH\Documents\PowerShell\"
-$Target = "$Env:HOMEPATH\dotfiles\Microsoft.PowerShell_profile.ps1"
+$Target = "$Env:HOMEPATH\dotfiles\PS_profile.ps1"
 $Name = "Microsoft.PowerShell_profile.ps1"
 New-Item -ItemType SymbolicLink -Path $Path -Name $Name -Target $Target -Force
 
