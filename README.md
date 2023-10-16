@@ -12,7 +12,7 @@ New-Item -ItemType SymbolicLink -Path "$Env:HOMEPATH\Documents\PowerShell\" -Nam
 ```
 
 Wezterm config:
-```
+```powershell
 New-Item -ItemType Symboliclink -Path "$Env:HOMEPATH\.config\wezterm\" -Target "$Env:HOMEPATH\dotfiles\wezterm\" -Force
 ```
 # Snippets
