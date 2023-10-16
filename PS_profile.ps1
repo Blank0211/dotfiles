@@ -1,3 +1,5 @@
+$myvar = "haha wow"
+
 # Remove highlight or visual style from directories
 $PSStyle.FileInfo.Directory = "" 
 Import-Module scoop-completion # scoop <tab> expansion in powershell
