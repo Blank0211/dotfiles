@@ -5,6 +5,8 @@ o.number = true
 o.relativenumber = true
 o.termguicolors = true
 o.colorcolumn = '80'
+o.list = true
+o.listchars = {leadmultispace = "|   "}
 
 -- Tabs & spaces
 o.expandtab = true
