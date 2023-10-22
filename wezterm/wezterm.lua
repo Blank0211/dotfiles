@@ -14,7 +14,14 @@ end
 wezterm.font("JetBrainsMono NFM", {weight="Regular", stretch="Normal", style="Normal"})
 config.color_scheme = 'tokyonight_night'
 config.default_prog = {'pwsh.exe', '-nologo'}
+-- Shortcuts
+config.keys = {
+    {
+        key = 'n',
+        mods = 'SHIFT|CTRL',
+        action = wezterm.action.ToggleFullScreen,
+    }
+}
 
 -- and finally, return the configuration to wezterm
 return config
-
