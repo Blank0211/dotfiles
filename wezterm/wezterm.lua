@@ -14,6 +14,7 @@ end
 wezterm.font("JetBrainsMono NFM", {weight="Regular", stretch="Normal", style="Normal"})
 config.color_scheme = 'tokyonight_night'
 config.default_prog = {'pwsh.exe', '-nologo'}
+config.hide_tab_bar_if_only_one_tab = true
 -- Shortcuts
 config.keys = {
     {
