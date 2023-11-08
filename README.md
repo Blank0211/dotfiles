@@ -1,5 +1,5 @@
 # Symlinks
-Run symlinks.ps1 to create symlinks for configs
+Run symlinks.ps1 to create symlinks for all configs.
 
 Neovim:
 ```powershell
