@@ -17,7 +17,7 @@ config.default_prog = {'pwsh.exe', '-nologo'}
 config.hide_tab_bar_if_only_one_tab = true
 -- Shortcuts
 config.keys = {
-    {   -- SHIFT+CTRL+n: Toggle Fullscreen
+    {   -- [SHIFT+CTRL+N]: Toggle Fullscreen
         key = 'n',
         mods = 'SHIFT|CTRL',
         action = wezterm.action.ToggleFullScreen,
