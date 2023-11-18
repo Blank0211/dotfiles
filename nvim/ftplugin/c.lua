@@ -9,9 +9,9 @@ vim.opt_local.softtabstop = 4
 -- [[ KEYMAPS ]] 
 -- =============
 function cmnt()
-    -- get line & strip leading whitespace
+    -- get line. strip leading whitespace. Return '^dw$' or 'I// <ESC>$',
+    -- depending on the first two chars of the line.
     local line = vim.api.nvim_get_current_line():match('^%s*(.*)')
-    -- Return '^dw$' or 'I// <ESC>$', depending on the first two chars of the line
     return line:sub(1, 2) == '//' and '^dw$' or 'I// <ESC>$'
 end
 vim.keymap.set('n', '<Leader>mm', cmnt,
