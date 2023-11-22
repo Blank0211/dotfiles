@@ -27,10 +27,10 @@ function ccp {
            [string]$InputFile = "waterfall.c",
            [string]$OutputFile = "a.exe")
 
-    # check if $compiler is clang or gcc, if not return.
-    if (($Compiler -cne "clang") -and ($Compiler -cne "gcc")) {
-        Write-Output "Invalid value for -compiler param: $Compiler"
-        return
+    if (($Compiler -eq "g") -or  ($Compiler -eq "gcc")) {
+        $Compiler = "gcc"
+    } else {
+        $Compiler = "clang"
     }
 
     $flags = "-std=c18 -Wall -Wextra -pedantic -Wformat=2 -g"
