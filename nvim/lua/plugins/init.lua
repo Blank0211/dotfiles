@@ -6,6 +6,7 @@ require('paq') {
     'folke/tokyonight.nvim',
     'echasnovski/mini.clue',
     'echasnovski/mini.files',
+    'garymjr/nvim-snippets',
 
     -- Dependencies
     'nvim-tree/nvim-web-devicons', -- For: MiniFiles
