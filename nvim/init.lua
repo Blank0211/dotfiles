@@ -7,6 +7,7 @@ local modules = {
     "plugins.tokyonight",
     "plugins.minifiles",
     "plugins.miniclue",
+    "plugins.snippy",
 }
 
 for _, module in ipairs(modules) do
