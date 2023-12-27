@@ -10,10 +10,10 @@ vim.opt_local.makeprg = "mingw32-make.exe"
 -- [[ KEYMAPS ]] 
 -- =============
 function cmnt()
-    -- get line. strip leading whitespace. Return '^dw$' or 'I// <ESC>$',
-    -- depending on the first two chars of the line.
+    -- get line. strip leading whitespace. Return '^dw<Down>$'
+    -- or 'I// <ESC><Down>$', depending on the first two chars of the line.
     local line = vim.api.nvim_get_current_line():match('^%s*(.*)')
-    return line:sub(1, 2) == '//' and '^dw$' or 'I// <ESC>$'
+    return line:sub(1, 2) == '//' and '^dw<Down>$' or 'I// <ESC><Down>$'
 end
 vim.keymap.set('n', '<Leader>mm', cmnt,
     {desc = 'Toggle comment on current line', expr = true, buffer = 0})
