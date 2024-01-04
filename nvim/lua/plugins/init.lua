@@ -12,3 +12,9 @@ require('paq') {
     'nvim-tree/nvim-web-devicons', -- For: MiniFiles
 }
 
+-- [[ HOW TO UNINSTALL ]]
+-- 1. Remove plugin from above
+-- 2. Remove plugin module from lua/plugins dir
+-- 3. Remove plugin from require list in nvim/init.lua
+-- 4. Run :PaqClean command
+
