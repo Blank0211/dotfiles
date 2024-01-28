@@ -14,6 +14,8 @@ end
 config.color_scheme = 'tokyonight_night'
 config.default_prog = {'pwsh.exe', '-nologo'}
 config.hide_tab_bar_if_only_one_tab = true
+config.harfbuzz_features = {'calt=0', 'clig=0', 'liga=0'} -- disable ligatures
+
 -- Shortcuts
 config.keys = {
     {   -- [SHIFT+CTRL+N]: Toggle Fullscreen
