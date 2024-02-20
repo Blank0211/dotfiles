@@ -13,8 +13,14 @@ end
 -- This is where you actually apply your config choices
 config.color_scheme = 'tokyonight_night'
 config.default_prog = {'pwsh.exe', '-nologo'}
-config.hide_tab_bar_if_only_one_tab = true
+config.enable_tab_bar = false
 config.harfbuzz_features = {'calt=0', 'clig=0', 'liga=0'} -- disable ligatures
+config.window_padding = {
+    left = 0,
+    right = 0,
+    top = 0,
+    bottom = 0,
+}
 
 -- Shortcuts
 config.keys = {
