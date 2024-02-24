@@ -4,6 +4,7 @@
 #>
 
 # Necessary buckets
+scoop install git # Required for installing buckets
 scoop bucket add extras
 scoop bucket add versions
 scoop bucket add sysinternals
@@ -23,7 +24,7 @@ scoop install marktext ghostwriter notepadplusplus
 scoop install bulk-crap-uninstaller
 
 # Dev Tools
-scoop install wezterm neovim git
+scoop install wezterm neovim
 
 # Networking
 scoop install firefox qbittorrent telegram
